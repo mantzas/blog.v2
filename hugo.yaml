@@ -1,0 +1,119 @@
+baseURL: https://blog.mantziaris.com
+languageCode: en-us
+title: Coding Odyssey
+theme: ["PaperMod"]
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    menu:
+      main:
+        - name: About
+          url: about/
+          weight: 5
+        - name: Post
+          url: post/
+          weight: 7
+        - name: Archive
+          url: archives/
+          weight: 8
+        - name: Tags
+          url: tags/
+          weight: 9
+        - name: Categories
+          url: categories/
+          weight: 10
+        - name: Series
+          url: series/
+          weight: 11
+        - name: Search
+          url: search/
+          weight: 12
+    params:
+      profileMode:
+        enabled: true
+        title: "Sotirios Mantziaris"
+        subtitle: "Σωτήριος Μαντζιάρης"
+        imageUrl: "https://avatars.githubusercontent.com/mantzas"
+        imageTitle: "avatar"
+        imageWidth: 300
+        imageHeight: 300
+        buttons:
+          - name: "Projects"
+            url: "/en/projects"
+
+params:
+  env: production
+  keywords: [Blog, OSS, Coding, Golang, Programming]
+  author: "Sotirios Mantziaris"
+  defaultTheme: auto
+  disableThemeToggle: true
+
+  ShowToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowShareButtons: false
+  ShowCodeCopyButtons: true
+  displayFullLangName: true
+
+  # editPost:
+  #   URL: "https://github.com/mantzas/blog/edit/master/content"
+  #   Text: "Suggest Changes"
+  #   appendFilePath: true
+
+  homeInfoParams:
+    Title: "Sotirios Mantziaris"
+    Subtitle: "Σωτήριος Μαντζιάρης"
+    Content: "Coding Odyssey"
+
+  profileMode:
+    enabled: false
+    title: "Sotirios Mantziaris"
+    subtitle: "Σωτήριος Μαντζιάρης"
+    imageUrl: "https://avatars.githubusercontent.com/mantzas"
+    imageTitle: "avatar"
+    imageWidth: 300
+    imageHeight: 300
+    buttons:
+      - name: "Projects"
+        url: "/en/projects"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/mantzas"
+    - name: x
+      url: "https://x.com/SMantziaris"
+    - name: LinkedIn
+      url: "https://www.linkedin.com/in/mantzas/"
+    - name: dev.to
+      url: "https://dev.to/mantzas"
+    - name: StackOverflow
+      url: "https://stackoverflow.com/users/182740/mantzas"
+    - name: RsS
+      url: "index.xml"
+
+  comments: false
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON

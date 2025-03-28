@@ -1,0 +1,8 @@
+- title: "patron"
+  link: "https://github.com/beatlabs/patron"
+  github: "beatlabs/patron"
+  description: "Go Microservice Framework"
+- title: "harvester"
+  link: "https://github.com/beatlabs/harvester"
+  github: "beatlabs/harvester"
+  description: "Go configuration package"

@@ -1,0 +1,11 @@
+{{ range .Site.Data.projects }}
+
+<div class="project">
+    <h3>{{ .title }}</h3>
+    <p>{{ .description }}</p>
+    <a href="{{ .link }}">
+        <img src="https://opengraph.githubassets.com/1a/{{ .github }}" />
+    </a>
+</div>
+
+{{ end }}
