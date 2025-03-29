@@ -13,6 +13,17 @@ enableEmoji: true
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: true
 
+pagination:
+  pagerSize: 5
+
+caches:
+  images:
+    dir: :cacheDir/images
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
 languages:
   en:
     languageName: "English"
@@ -55,11 +66,23 @@ languages:
 
 params:
   env: production
-  keywords: [Blog, OSS, Coding, Golang, Programming]
+  title: "Coding Odyssey"
+  description: "Coding Odyssey"
+  keywords:
+    [
+      Blog,
+      OSS,
+      Coding,
+      Go,
+      Dotnet,
+      DDD,
+      Distributed Systems,
+      Microservices,
+      Software Architecture,
+    ]
   author: "Sotirios Mantziaris"
   defaultTheme: auto
   disableThemeToggle: true
-
   ShowToc: true
   TocOpen: false
   ShowBreadCrumbs: true
@@ -68,6 +91,28 @@ params:
   ShowShareButtons: false
   ShowCodeCopyButtons: true
   displayFullLangName: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+
+  # assets:
+  # disableHLJS: true # to disable highlight.js
+  # disableFingerprinting: true
+  # favicon: favicon.ico
+  # favicon16x16: assets/favicon.ico
+  # favicon32x32: assets/favicon.ico
+  # apple_touch_icon: "<link / abs url>"
+  # safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Home"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
 
   # editPost:
   #   URL: "https://github.com/mantzas/blog/edit/master/content"
@@ -105,7 +150,14 @@ params:
     - name: RsS
       url: "index.xml"
 
-  comments: false
+  analytics:
+    google:
+      SiteVerificationTag: "UA-69796473-2"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
 
 taxonomies:
   category: categories
