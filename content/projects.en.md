@@ -1,5 +1,5 @@
 ---
-title: "Projects 💻"
+title: "Projects"
 url: "/en/projects"
 summary: "projects"
 ShowToc: false

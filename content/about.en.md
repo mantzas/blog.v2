@@ -1,5 +1,5 @@
 ---
-title: "About Me 👨‍💻"
+title: "About Me"
 url: "/en/about"
 summary: "about"
 ShowToc: false
