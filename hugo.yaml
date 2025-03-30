@@ -152,7 +152,7 @@ params:
 
   analytics:
     google:
-      SiteVerificationTag: "G-3304G44HB"
+      SiteVerificationTag: "G-GLK43YZ1CR"
 
   cover:
     hidden: true # hide everywhere but not in structured data
@@ -166,7 +166,7 @@ taxonomies:
 
 services:
   googleAnalytics:
-    id: G-3304G44HB
+    id: "G-GLK43YZ1CR"
 
 privacy:
   googleAnalytics:
